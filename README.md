@@ -1,1 +1,6 @@
-# SeleniumDemo
+Hello! You can execute the program via IDE (Eclipse, for example) or with the .jar file. There are also editable Excel files in the Excel folder and logs and reports from the automation that you can see (these last two are generated each time the automation finishes an iteration). It took me about half an hour to code it but I had to cut a lot of code out from previous and bigger automations and translate the rest to English. That's why I did a single commit.
+
+This automation demo visits amazon.com, enters "Alexa" on the search bar (this text is taken from the "Data" Excel, which I usually use for much bigger ammounts of data, in this case it's just a single row), clicks on the third item (taking into account that Amazon's "Today's Deals" might appear) and checking if it's available por purchase.
+It could also be done in a better way, like for example implementing Maven, TestNG or JUnit, not starting the program with tha main() function, maybe not using Excels to save the xPaths and instead use a Java properties file. I'm planning to work on those weaknesses and implement all solutions that could make the automations better.
+
+mblazevac@outlook.com https://www.linkedin.com/in/blazeback/?locale=en_US
