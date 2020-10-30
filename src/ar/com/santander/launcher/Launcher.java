@@ -22,6 +22,9 @@ import ar.com.santander.pantallas.Screen;
 
 public class Launcher {
 
+	// NEW THINGS TO IMPLEMENT:
+	// JUnit/TestNG, Maven
+	
 	private static WebDriver d;
 	private static Configuration config = new Configuration();  // The Configuration Excel, where we can set the browser, webpage and what cases to run.
 	private static Cases cases = new Cases(); // The Case class from which all cases inherit and get all of the necessary common attributes.
@@ -31,7 +34,7 @@ public class Launcher {
 		
 		Logs.generateLog(); // A log located in the "logs" folder, it saves everything printed to the console.
 		
-		closeDriverTasks(); // This is useful for ending the selenium browser tasks, they don't close by themselves.
+		closeDriverTasks(); // This is useful for ending the selenium browser tasks, as they don't close by themselves.
 		
 		switch (config.getBrowser()) {
 		

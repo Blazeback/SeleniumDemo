@@ -66,17 +66,17 @@ public class CaseDemo extends Cases {
 					
 					Utilities.picture("Items", caseName, "info", y); // A picture for the report.
 					
-					if (screen.start.checkForTodaysDeals(y, caseName)) { 
+					if (screen.search.checkForTodaysDeals(y, caseName)) { 
 						
-						screen.start.skipTodaysDeals(y, caseName); // Clicks on the proper third item in case the "Today's Deals" show up.
+						screen.search.skipTodaysDeals(y, caseName); // Clicks on the proper third item in case the "Today's Deals" show up.
 						
 					} else {
 						
-						screen.start.clickThirdItem(y, caseName);
+						screen.item.clickThirdItem(y, caseName);
 						
 					}
 					
-					screen.start.checkAlexaAvailability(y, caseName);
+					screen.item.checkAlexaAvailability(y, caseName);
 					
 					Utilities.picture("Data of the third item", caseName, "info", y);
 					
